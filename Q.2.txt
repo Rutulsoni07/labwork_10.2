@@ -1,0 +1,30 @@
+Q.2 Write a Program to find the length of the String by passing a string as an argument using UDF.
+For example,
+Input:
+Enter any string: development
+
+
+Output:
+Length is: 11
+Ans: #include <stdio.h>
+#include <string.h>
+
+
+int findLength(char k[]) {
+    return strlen(k);
+}
+
+
+int main() {
+    char k[100];
+    printf("Enter any string: ");
+    scanf("%s", k);
+    int length = findLength(k);
+    printf("Length is: %d\n", length);
+    return 0;
+}
+
+
+O\p: /tmp/PcUBlNT0yF.o
+Enter any string: development
+Length is: 11
